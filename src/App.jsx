@@ -6,14 +6,14 @@ export const App = () => {
     
   return (
     <>
-      <div className='row'>
-        <div className="col-12">
+      <div className='row m-0'>
+        <div className="col-12 p-0">
           <NavBar />
 
         </div>
       </div>
 
-      <div className="row">
+      <div className="row mx-0">
         <div className="col-12">
           
           <TodoApp />
