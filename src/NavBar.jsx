@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom";
 
-//<div className=' container-fluid bg-black navheight d-flex position-fixed rounded-3 justify-content-around'>
+
 
 export const NavBar = () => {
   return (
@@ -12,10 +12,7 @@ export const NavBar = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
 
-         <NavLink className={ ({isActive}) =>  `nav-link ${ isActive ? 'active' : '' }`}
-          to="/">
-            Home
-         </NavLink>
+         
 
         
           
@@ -29,3 +26,7 @@ export const NavBar = () => {
 }
 
 
+//</ul><NavLink className={ ({isActive}) =>  `nav-link ${ isActive ? 'active' : '' }`}
+         //</ul> to="/">
+         //</ul>   Home
+         //</ul></NavLink>

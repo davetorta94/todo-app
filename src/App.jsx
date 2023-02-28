@@ -13,7 +13,7 @@ export const App = () => {
         </div>
       </div>
 
-      <div className="row mx-0">
+      <div className="row mx-0 body-background">
         <div className="col-12">
           
           <TodoApp />

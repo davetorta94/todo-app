@@ -13,25 +13,37 @@ export const TodoApp = () => {
 
   return (
     <>
-    <div className="row d-flex justify-content-center mt-3">
+    <div className="container-fluid">
+        
+    
+        <div className="row ">
+    
+    
+          <div className="col-12 d-flex justify-content-center">
+              
+              <TodoForm onNewTodo={ handleNewTodo } />
+    
+          </div>
+
+          
+    
+        </div>
+
+        <div className="row">
 
 
-        <div className="col-7">
-
+        <div className="col-12 mt-5">
+    
             <TodoList   todos={ todos }
-                        onDeleteTodo={ (id) => handleDeleteTodo(id) }
-                        onToggleTodo={handleToggleTodo }/>
+                onDeleteTodo={ (id) => handleDeleteTodo(id) }
+                onToggleTodo={handleToggleTodo }
+                />
 
         </div>
-
-        <div className="col-5">
-            
-            <TodoForm onNewTodo={ handleNewTodo } />
-
+          
         </div>
-
-
-    </div>
+    
+      </div>
     </>
 
   )
